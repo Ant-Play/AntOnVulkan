@@ -11,19 +11,13 @@ namespace VulkanCore {
 	{
 		Log::Init();
 
-		ANT_CORE_TRACE("AntOfVulkan Engine {}", ANTONVULKAN_BUILD_ID);
-		ANT_CORE_TRACE("Initializing...");
-
-		//VULKANCORE_CORE_TRACE("AntOfVulkan Engine {}", ANTONVULKAN_BUILD_ID);
-		//VULKANCORE_CORE_TRACE_TAG("Core", "AntOfVulkan Engine {}", ANTONVULKAN_BUILD_ID);
-		//VULKANCORE_CORE_TRACE_TAG("Core", "Initializing...");
+		ANT_CORE_TRACE_TAG("Core", "AntOnVulkan Engine {}", ANTONVULKAN_BUILD_ID);
+		ANT_CORE_TRACE_TAG("Core", "Initializing...");
 	}
 
 	void ShutdownCore()
 	{
-		ANT_CORE_TRACE("Shutting down...");
-
-		//VULKANCORE_CORE_TRACE_TAG("Core", "Shutting down...");
-		//Log::Shutdown();
+		ANT_CORE_TRACE_TAG("Core", "Shutting down...");
+		Log::Shutdown();
 	}
 }
